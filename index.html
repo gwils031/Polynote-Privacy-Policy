@@ -1,72 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Polynote Home</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PolyNote - Your AI Study Assistant</title>
   <style>
     body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
       margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      background-color: #0f172a;
-      color: #ffffff;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-start;
-      min-height: 100vh;
-      padding: 40px 16px;
+      padding: 0;
+      background-color: #f7f7f7;
+      color: #333;
+    }
+    header {
+      background-color: #4a90e2;
+      color: #fff;
+      padding: 20px 0;
       text-align: center;
     }
-
-    h1 {
-      font-size: 32px;
-      font-weight: 700;
-      margin-bottom: 16px;
+    header h1 {
+      margin: 0;
+      font-size: 2em;
     }
-
+    main {
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+    h2 {
+      color: #222;
+      margin-top: 1.5em;
+    }
     p {
-      font-size: 16px;
-      line-height: 1.6;
-      margin-bottom: 24px;
-      color: rgba(255, 255, 255, 0.9);
+      margin: 1em 0;
     }
-
-    a {
+    a.button {
       display: inline-block;
-      margin: 8px 12px;
-      padding: 12px 24px;
-      background-color: #1e293b;
-      color: #ffffff;
+      margin: 10px 10px 10px 0;
+      padding: 12px 20px;
+      background-color: #4a90e2;
+      color: white;
       text-decoration: none;
-      font-weight: 600;
-      border-radius: 8px;
-      transition: background-color 0.2s;
+      border-radius: 6px;
+      transition: background-color 0.3s;
     }
-
-    a:hover {
-      background-color: #334155;
+    a.button:hover {
+      background-color: #357ab8;
     }
-
     footer {
-      margin-top: auto;
-      padding-top: 32px;
-      font-size: 14px;
-      color: rgba(255, 255, 255, 0.6);
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      color: #666;
+      background-color: #f0f0f0;
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
+  <header>
+    <h1>PolyNote</h1>
+    <p>Your AI-powered study assistant for recordings, transcripts, and study materials</p>
+  </header>
 
-  <h1>Welcome to Polynote</h1>
-  <p>Your AI-assisted study companion. Record lectures, generate transcripts, and create flashcards all in one place.</p>
+  <main>
+    <h2>About PolyNote</h2>
+    <p>PolyNote helps students and professionals convert audio recordings into accurate transcripts, flashcards, and quizzes using AI. Organize your study materials efficiently and review smarter, not harder.</p>
 
-  <a href="Privacy.html">Privacy Policy</a>
-  <a href="Terms-Of-Service.html">Terms of Service</a>
+    <h2>Key Features</h2>
+    <ul>
+      <li>On-device audio transcription with AI assistance</li>
+      <li>Generate quizzes, flashcards, and key terms from your recordings</li>
+      <li>Organize content into folders and projects</li>
+      <li>Optional Google Calendar integration for scheduling study sessions</li>
+      <li>Offline core functionality</li>
+    </ul>
+
+    <h2>Data Transparency</h2>
+    <p>PolyNote only sends transcript text to our AI backend (OpenAI) for study material generation. Audio files remain on your device. We do not share your data with third parties without consent.</p>
+
+    <h2>Important Links</h2>
+      <a href="Privacy.html">Privacy Policy</a>
+      <a href="Terms-Of-Service.html">Terms of Service</a>
+  </main>
 
   <footer>
-    © 2025 Polynote. All rights reserved.
+    &copy; 2025 PolyNote. All rights reserved.
   </footer>
-
 </body>
 </html>
