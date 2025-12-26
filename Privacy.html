@@ -2,150 +2,236 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Polynote Privacy Policy</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy – PolyNote</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 0 20px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
       line-height: 1.6;
-      color: #222;
+      margin: 0;
+      padding: 24px;
+      color: #1f2937;
+      background-color: #ffffff;
     }
-    h1, h2 {
-      color: #111;
+    h1, h2, h3 {
+      color: #111827;
+    }
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+    h2 {
+      margin-top: 2rem;
+      font-size: 1.4rem;
+    }
+    p {
+      margin: 0.75rem 0;
     }
     ul {
-      margin-left: 20px;
+      margin-left: 1.25rem;
+    }
+    li {
+      margin: 0.4rem 0;
+    }
+    .meta {
+      color: #6b7280;
+      font-size: 0.9rem;
+    }
+    .section {
+      margin-bottom: 1.5rem;
     }
   </style>
 </head>
+
 <body>
 
-<h1>Privacy Policy</h1>
-<p><strong>Last updated:</strong> <script>document.write(new Date().toLocaleDateString());</script></p>
+  <h1>Privacy Policy</h1>
+  <p class="meta">Last updated: December 26, 2025</p>
 
-<h2>1. Introduction</h2>
-<p>
-Polynote ("we", "us", "our", or "the App") is committed to protecting your privacy.
-This Privacy Policy explains how we collect, use, disclose, and otherwise handle
-your information when you use our mobile application.
-</p>
+  <div class="section">
+    <h2>1. Introduction</h2>
+    <p>
+      PolyNote ("we", "us", "our", or "the App") is a privacy-first study and lecture
+      note-taking application. We are committed to protecting your privacy and
+      being transparent about how data is handled.
+    </p>
+    <p>
+      This Privacy Policy explains how PolyNote collects, uses, stores, and protects
+      information when you use our mobile application.
+    </p>
+  </div>
 
-<h2>2. Information We Collect</h2>
-<p>Polynote collects minimal personal information. The app operates primarily locally on your device:</p>
-<ul>
-  <li><strong>Recording Data:</strong> Audio recordings (.m4a format) are stored locally on your device</li>
-  <li><strong>Transcription Data:</strong> Speech-to-text transcription is processed entirely on-device using OpenAI Whisper</li>
-  <li><strong>User Profile:</strong> Name, email, and profile photo (only if you sign in with Google)</li>
-  <li><strong>Google Account Data:</strong> Email and basic profile information (optional)</li>
-  <li><strong>Calendar Data:</strong> Google Calendar access for scheduling study sessions (optional, requires explicit consent)</li>
-  <li><strong>Study Materials:</strong> Auto-generated flashcards, quizzes, and key terms stored locally</li>
-  <li><strong>Device Permissions:</strong> Microphone and file storage access</li>
-</ul>
+  <div class="section">
+    <h2>2. Information We Collect</h2>
+    <p>
+      PolyNote is designed to operate primarily on-device and collect the minimum
+      amount of data required to provide its features.
+    </p>
 
-<h2>3. Data Storage and Security</h2>
-<p>Polynote follows a privacy-first, local-storage approach:</p>
-<ul>
-  <li>All recordings and transcriptions are stored locally on your device</li>
-  <li>Audio files are saved in the app’s private documents directory</li>
-  <li>Study materials (flashcards, key terms, quizzes) are cached locally</li>
-  <li>No audio recordings are uploaded to external servers</li>
-  <li>Google Sign-In and Calendar integration are completely optional</li>
-  <li>The app can function fully offline</li>
-</ul>
-<p>
-We recommend securing your device with a PIN, password, or biometric authentication.
-</p>
+    <h3>2.1 Information Stored Locally on Your Device</h3>
+    <ul>
+      <li>Audio recordings of lectures (stored locally in the app’s private storage)</li>
+      <li>On-device speech-to-text transcriptions</li>
+      <li>Generated study materials (summaries, flashcards, quizzes, key terms)</li>
+      <li>App preferences and usage state</li>
+    </ul>
 
-<h2>4. On-Device Transcription</h2>
-<p>
-Speech-to-text transcription is performed entirely on your device:
-</p>
-<ul>
-  <li>Uses the OpenAI Whisper tiny model (downloaded once during setup)</li>
-  <li>All processing happens locally using background isolates</li>
-  <li>Audio is never sent to cloud servers</li>
-  <li>Segment-based transcription for improved accuracy</li>
-</ul>
-<p>
-This ensures your recordings and transcripts never leave your device.
-</p>
+    <h3>2.2 Optional Account Information</h3>
+    <ul>
+      <li>Name and email address (only if you choose to sign in)</li>
+      <li>Profile photo (Google Sign-In only)</li>
+      <li>Anonymous user ID for account management</li>
+    </ul>
 
-<h2>5. Third-Party Services</h2>
-<p>Polynote integrates with the following optional third-party services:</p>
-<ul>
-  <li><strong>Google Sign-In:</strong> Optional authentication</li>
-  <li><strong>Google Calendar API:</strong> Optional scheduling integration</li>
-  <li><strong>Whisper Flutter:</strong> On-device speech recognition</li>
-</ul>
-<p>
-When using Google services, your data is subject to Google’s Privacy Policy.
-We do not share recordings or transcripts with Google.
-</p>
+    <h3>2.3 Google User Data (Optional)</h3>
+    <p>
+      If you choose to enable Google features, PolyNote may access:
+    </p>
+    <ul>
+      <li>Email address</li>
+      <li>Basic profile information (name and profile photo)</li>
+      <li>Google Calendar event data (only if calendar integration is enabled)</li>
+    </ul>
+  </div>
 
-<h2>6. Study Materials and AI Features</h2>
-<p>
-Polynote generates study materials from your transcripts:
-</p>
-<ul>
-  <li>Flashcards</li>
-  <li>Quizzes</li>
-  <li>Key terms and definitions</li>
-</ul>
-<p>
-AI study materials are generated using OpenAI GPT models via a secure Cloudflare Workers backend proxy.
-Only transcript text (not audio) is transmitted for this purpose.
-Generated content is cached locally and can be deleted at any time.
-</p>
-<p>
-Users may optionally configure their own OpenAI API key or disable AI features entirely.
-</p>
+  <div class="section">
+    <h2>3. On-Device Transcription</h2>
+    <p>
+      PolyNote performs speech-to-text transcription entirely on your device using
+      an offline OpenAI Whisper model.
+    </p>
+    <ul>
+      <li>Audio recordings are never uploaded for transcription</li>
+      <li>All processing occurs locally using background processing</li>
+      <li>No raw audio is transmitted to any external server</li>
+    </ul>
+  </div>
 
-<h2>7. Data Transmission and Processing</h2>
-<p>Data transmission occurs only in these cases:</p>
-<ul>
-  <li>Transcript text sent for AI study material generation</li>
-  <li>Google profile or calendar data (if enabled)</li>
-</ul>
-<p>
-Audio recordings and raw transcripts remain on your device.
-The backend proxy does not store or log transcript content.
-</p>
+  <div class="section">
+    <h2>4. AI Study Material Generation</h2>
+    <p>
+      PolyNote can optionally generate AI-powered study materials such as summaries,
+      flashcards, quizzes, and key terms.
+    </p>
+    <ul>
+      <li>Only transcript text is sent for AI processing</li>
+      <li>No audio files are transmitted</li>
+      <li>Requests are routed through a secure Cloudflare Workers backend</li>
+      <li>Transcript content is not stored or logged by the backend</li>
+      <li>Generated content is cached locally on your device</li>
+    </ul>
+    <p>
+      Users may disable AI features or configure their own OpenAI API key at any time.
+    </p>
+  </div>
 
-<h2>8. User Rights</h2>
-<p>You have full control over your data:</p>
-<ul>
-  <li>Access all data locally on your device</li>
-  <li>Delete recordings, transcripts, and study materials</li>
-  <li>Export audio files</li>
-  <li>Opt out of Google services</li>
-  <li>Disable AI features or use your own API key</li>
-</ul>
+  <div class="section">
+    <h2>5. Google User Data Access and Usage</h2>
+    <p>
+      PolyNote’s use of Google user data complies with the Google API Services User
+      Data Policy, including the Limited Use requirements.
+    </p>
 
-<h2>9. Platform Permissions</h2>
-<p>Polynote may request the following permissions:</p>
-<ul>
-  <li>Microphone (for recording)</li>
-  <li>Storage / Files (for saving content)</li>
-  <li>Foreground service (Android recording)</li>
-  <li>Network access (optional AI and Google services)</li>
-</ul>
+    <h3>How Google user data is used</h3>
+    <ul>
+      <li>Authentication and optional account sign-in</li>
+      <li>Displaying basic profile information within the app</li>
+      <li>Scheduling or associating study sessions with calendar events (if enabled)</li>
+    </ul>
 
-<h2>10. Changes to This Policy</h2>
-<p>
-We may update this Privacy Policy periodically.
-Changes will be reflected by updating the date above.
-</p>
+    <h3>Data storage and retention</h3>
+    <ul>
+      <li>Google profile data is stored only for account identification</li>
+      <li>Calendar data is accessed in real time and not permanently stored</li>
+      <li>Users may revoke Google access at any time via Google Account settings</li>
+    </ul>
 
-<h2>11. Contact Us</h2>
-<p>
-If you have questions about this Privacy Policy or our privacy practices, contact us at:
-</p>
-<p>
-<strong>Email:</strong> PolyNoteHQ+Support@gmail.com 
-</p>
+    <h3>Data sharing restrictions</h3>
+    <ul>
+      <li>Google user data is never sold or shared with third parties</li>
+      <li>Google user data is not used for advertising or marketing</li>
+      <li>Google user data is not transferred to OpenAI or AI processing services</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>6. Third-Party Services</h2>
+    <p>
+      PolyNote integrates with the following optional third-party services:
+    </p>
+    <ul>
+      <li>Google Sign-In (authentication)</li>
+      <li>Google Calendar API (optional scheduling features)</li>
+      <li>OpenAI API (text-only AI study material generation)</li>
+      <li>Cloudflare Workers (secure API proxy)</li>
+    </ul>
+    <p>
+      Use of Google APIs is strictly limited to user-initiated functionality and
+      complies with Google API Services User Data Policy.
+    </p>
+  </div>
+
+  <div class="section">
+    <h2>7. Data Security</h2>
+    <p>
+      We take reasonable measures to protect your data:
+    </p>
+    <ul>
+      <li>Local-first storage architecture</li>
+      <li>Encrypted network communication (HTTPS)</li>
+      <li>No storage of raw audio or transcripts on servers</li>
+      <li>Secure handling of API keys via backend proxy</li>
+    </ul>
+    <p>
+      We recommend securing your device with a password, PIN, or biometric lock.
+    </p>
+  </div>
+
+  <div class="section">
+    <h2>8. User Control and Rights</h2>
+    <p>
+      You retain full control over your data:
+    </p>
+    <ul>
+      <li>Delete recordings, transcripts, and study materials at any time</li>
+      <li>Export locally stored audio files</li>
+      <li>Disable AI features</li>
+      <li>Opt out of Google services</li>
+      <li>Revoke Google account access via Google settings</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>9. Permissions</h2>
+    <p>
+      PolyNote may request the following permissions:
+    </p>
+    <ul>
+      <li>Microphone (lecture recording)</li>
+      <li>Local storage / files (saving content)</li>
+      <li>Foreground service (Android recording)</li>
+      <li>Network access (optional AI and Google features)</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>10. Changes to This Policy</h2>
+    <p>
+      We may update this Privacy Policy from time to time. Updates will be reflected
+      by revising the “Last updated” date above.
+    </p>
+  </div>
+
+  <div class="section">
+    <h2>11. Contact Us</h2>
+    <p>
+      If you have any questions about this Privacy Policy or our data practices,
+      contact us at:
+    </p>
+    <p>
+      <strong>Email:</strong> PolyNoteHQ+Support@gmail.com
+    </p>
+  </div>
 
 </body>
 </html>
